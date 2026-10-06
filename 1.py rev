@@ -1,0 +1,177 @@
+# import numpy as np
+# print("Numpy version:", np.__version__)
+
+# import numpy as np
+# arr = np.array([1,2,3,4,5])
+# print(arr)
+# print(type(arr))
+
+# import numpy as np
+# # 1 D array
+# arr = np.array([1,23,4,5])
+# print(arr)
+# print(type(arr))
+
+# # 2 D array
+# arr = np.array([
+#     [1,3,4],
+#     [5,7,8]
+# ])
+
+# print(arr)
+# print(type(arr)) 
+# print(arr.shape) # rows and column
+# print(arr.ndim) # nu of dimension
+# print(arr.size) # total element
+# print(arr.dtype) # data type 
+
+# # 3 d array
+# arr = np.array([
+#     [
+#         [3,4],
+#         [4,5]
+#     ],
+#     [
+#         [5,6],
+#         [7,8]
+#     ]
+# ])
+
+# print(arr)
+# print(type(arr))
+
+# # use of shape ,size ,ndim,dtype
+# print(arr.ndim) # number of dimension 
+# print(arr.dtype) # data type
+# print(arr.size) # Total element
+# print(arr.shape) # row and column 
+
+# Indexing 
+import numpy as np
+# arr = np.array([1,2,3,4,5])
+
+# print(arr[0])
+# print(arr[-1])
+
+# arr = np.array([
+#     [1,2,3],
+#     [5,6,7]
+# ])
+
+# print(arr[0,1])
+# print(arr[1,2])
+
+# arr = np.array([
+#     [[1,2],[3,4]],
+#     [[5,6],[7,8]]
+# ])
+
+# print(arr[0,1,1])
+# print(arr[1,1,0])
+
+# SLICING
+import numpy as np
+# arr = np.array ([1,2,3,4,5,7])
+
+# print(arr[1:4])  # index 1 to 3
+# print(arr[:3])   # index 0 to 2
+# print(arr[::2])  # start from 0 and jump at evey second element
+# print(arr[1:]) # index 1 to end
+# print(arr[:-1]) # begining to one before last
+
+# arr = np.array([
+#     [1,2,3],
+#     [3,4,5]
+# ])
+
+# print(arr[:,1]) # All rows, column1
+# print(arr[0,:]) # Row 0, all columns
+# print(arr[:,0:2]) # All rows, coulmn 0 and 1
+# print(arr[1,:]) # Row 1,ALL columns
+
+# Reshaping 
+# import numpy as np 
+# arr = np.array([1,2,3,4,5,6])
+# print(arr.shape)
+# print(arr.reshape(2,3))
+# print(arr.reshape(3,2))
+# print(arr.reshape(6))
+# print(arr.reshape(2,-1))
+# print(arr.reshape(3,-1))
+# print(arr.reshape(-1,2))
+
+# FLATTERING : CONVERTING  A MULTI_ dimensional array in 1 d array
+
+# import numpy as np
+# arr = np.array([1,2,3,4,5,6])
+
+# flat = arr.flatten()
+# flat[0] = 100 # in this output  memory don,t change
+# print(flat)
+# print(arr)
+
+# rav = arr.ravel()
+# rav[0] = 89
+# print(rav)
+# print(arr)
+
+# import numpy as np
+# arr = np.array([
+#     [1,2,3],
+#     [4,5,6],
+# ])
+
+# flat = arr.flatten()
+# flat[0] = 67
+# print(flat)
+# print(arr)
+
+# rav = arr.ravel()
+# rav[1] = 99
+# print(rav)
+# print(arr)
+
+# Matrix operation 
+# import numpy as np
+# a = np.array([10,20,30])
+# b = np.array([1,2,3])
+
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+# print(a%b)
+
+# import numpy as np
+# a = np.array([
+#     [1,2],
+#     [3,4]
+# ])
+
+# b = np.array([
+#     [5,6],
+#     [7,8]
+# ])
+
+# print(a+b)
+# print(a-b)
+# print(a%b)
+# print(a/b)
+# print(a*b)
+
+import numpy as np
+a = np.array([
+    [[1,2],[3,4]],
+    [[5,6],[7,8]]
+])
+
+b = np.array([
+    [[10,20],[30,40]],
+    [[50,60],[70,80]]
+])
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
